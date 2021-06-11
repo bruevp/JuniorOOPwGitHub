@@ -10,11 +10,17 @@ public abstract class Shape : MonoBehaviour
 
 	protected Rigidbody Rigidbody;
 
+	// ENCAPSULATION
 	private Bounds Bounds => GameManager.Instance.Bounds;
-		private Vector3 RandomWithinBounds => 
+
+	// ENCAPSULATION
+	private Vector3 RandomWithinBounds => 
 		new Vector2(Random.Range(-Bounds.size.x, Bounds.size.x), Random.Range(-Bounds.size.y, Bounds.size.y));
 
+	// ENCAPSULATION
 	private float RandomRotation => Random.Range(-maxTurnSpeed, maxTurnSpeed);
+
+	// ENCAPSULATION
 	private float RandomSpeed => Random.Range(maxSpeed * 0.3f, maxSpeed);
 
 	private float currentSpeed;
@@ -26,6 +32,7 @@ public abstract class Shape : MonoBehaviour
 
 	private void Start()
 	{
+		// ABSTRACTION
 		SetRandomPosition();
 		StartCoroutine(RandomizeMovement());
 		StartCoroutine(CustomizeRoutine());
@@ -33,6 +40,7 @@ public abstract class Shape : MonoBehaviour
 
 	private void Update()
 	{
+		// ABSTRACTION
 		Move();
 	}
 

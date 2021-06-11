@@ -3,12 +3,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    // ENCAPSULATION
     public Bounds Bounds { get; private set; }
+
+    // ENCAPSULATION
     public static GameManager Instance { get; private set; }
 
 	private void Awake()
 	{
         Instance = this;
+        // ABSTRACTION
         Initialize();
 	}
 
@@ -20,6 +24,7 @@ public class GameManager : MonoBehaviour
 
 	private void Update()
     {
+        // ABSTRACTION
         SelectObjectWithMouse();
     }
 
