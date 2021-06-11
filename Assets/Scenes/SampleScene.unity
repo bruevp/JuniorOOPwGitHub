@@ -278,6 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   maxTurnSpeed: 200
+  pulseSpeed: 5
 --- !u!54 &357953697
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -406,6 +407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   maxTurnSpeed: 200
+  changeColorSpeed: 5
 --- !u!54 &395612082
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -711,6 +713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   maxTurnSpeed: 200
+  gravitySwitchProbability: 30
 --- !u!54 &1002787385
 Rigidbody:
   m_ObjectHideFlags: 0
